@@ -7,10 +7,12 @@ from sklearn.metrics import accuracy_score, confusion_matrix
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# DagsHub init for MLflow tracking
 import dagshub
-dagshub.init(repo_owner='vikashdasXXX', repo_name='YT-MLOPS-Experiments-with-MLFlow', mlflow=True)
+dagshub.init(repo_owner='dpsharma15', repo_name='YT-MLOPS-Experiments-with-MLFlow', mlflow=True)
 
-mlflow.set_tracking_uri("https://dagshub.com/vikashdas770/")
+# Set MLflow tracking URI to DagsHub repo
+mlflow.set_tracking_uri("https://dagshub.com/dpsharma15/YT-MLOPS-Experiments-with-MLFlow.mlflow")
 
 # Load Wine dataset
 wine = load_wine()
